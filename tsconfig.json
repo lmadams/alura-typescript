@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "outDir": "app/js",
+        "noEmitOnError": true,
+        "noImplicitAny": true,
+        "removeComments": true, // Desligar transpiller de comentarios 
+        "module": "system",
+        "strictNullChecks": true
+    },
+    "include": [
+        "app/ts/**/*"
+    ]
+}
