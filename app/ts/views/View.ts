@@ -1,3 +1,4 @@
+import { logarTempoDeExecucao } from '../helpers/decorators/index';
 /**
  * Classe abstrata não pode ser instanciada... apenas herdada
  */
@@ -17,6 +18,7 @@ export abstract class View<T> {
         this._escapar = escapar; //permitir ou nao script dentro de template
     }
 
+    @logarTempoDeExecucao()
     update(model: T): void {
         let template = this.template(model);
         if (this._escapar) {
